@@ -3,7 +3,7 @@ const route = express.Router();
 const dataUtile = require('../data');
 
 route.route('/').get(async function(req,res){
-    return res.send.json("hello!")
+    return res.json("hello!")
 });
 
 
