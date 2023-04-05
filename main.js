@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use('/',(req,res)=>{
+    res.send('hello home page');
+});
 app.use('/api/getdata',mainRouter);
 const port = 4000
 app.listen(port,()=>{
