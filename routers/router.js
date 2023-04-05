@@ -2,8 +2,8 @@ const express = require('express');
 const route = express.Router();
 const dataUtile = require('../data');
 
-route.route('/').get(async function(req,res){
-    return res.json("hello!")
+route.route('/').get(function(req,res){
+    return res.send("hello")
 });
 
 
