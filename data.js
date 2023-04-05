@@ -4,7 +4,6 @@ const utiles = require('./telegram');
 const helpers = require('./helpers/help');
 
 const searchData = async (city) => {
-    driver.
     let driver = new Builder().forBrowser("chrome").build();
     driver.manage().window().maximize();
     await driver.get(`https://www.rest.co.il/kosher-restaurants/${city}/kosher/`);
